@@ -1,0 +1,724 @@
+/* GENERAL PAGE STYLING */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #172554;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* HEADER / BRANDING */
+
+.site-header {
+    background-color: #172554;
+    color: #d4af37;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.branding h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.branding p {
+    margin: 8px 0 0;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+
+/* NAVIGATION */
+
+.site-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    background-color: #ffffff;
+    padding: 15px 20px;
+
+    border-bottom: 3px solid #d4af37;
+}
+
+.site-navigation a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.site-navigation a:hover {
+    color: #172554;
+}
+
+
+/* HERO / FEATURED STORY */
+
+.hero {
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.85)
+    );
+}
+
+.category {
+    color: #d4af37;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    margin: 5px 0;
+    font-size: 3rem;
+}
+
+.feature-subtitle {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.read-more {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    background-color: #172554;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    background-color: #d4af37;
+}
+
+
+/* LATEST NEWS */
+
+.latest-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.latest-news h2 {
+    color: #172554;
+    grid-column: 1 / -1;
+}
+
+.news-card {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #172554;
+    border: 1px solid #d4af37;
+}
+
+.news-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* ANALYSIS SECTION */
+
+.analysis-section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    margin: 5px 0;
+    font-size: 2.5rem;
+    color: #172554;
+}
+
+.section-heading > p:last-child {
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+}
+
+
+/* Analyst cards */
+
+.analyst-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.analyst-card {
+    border-top: 4px solid #d4af37;
+    background-color: #172554;
+    color: #ffffff;
+}
+
+.analyst-content {
+    padding: 30px;
+}
+
+.sport-label {
+    color: #d4af37;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.analyst-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.8rem;
+}
+
+.analyst-role {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.analyst-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d4af37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.analyst-card a:hover {
+    color: #ffffff;
+}
+
+/* HUMAN STORIES SECTION */
+
+.human-section {
+    margin: 80px 0;
+    padding: 70px 40px;
+    background-color: #172554;
+    color: #ffffff;
+}
+
+.human-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.human-content h2 {
+    font-size: 3rem;
+    margin: 10px 0 20px;
+}
+
+.human-introduction {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #d4af37;
+}
+
+.human-content > p:not(.category):not(.human-introduction) {
+    line-height: 1.7;
+}
+
+/* GENERAL ARTICLE STYLING */
+
+article {
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #172554;
+    color: #d4af37;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .site-navigation {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .branding h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero img {
+        height: 500px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .feature-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .latest-news {
+        grid-template-columns: 1fr;
+    }
+
+    .analyst-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .human-content {
+        padding: 50px 20px;
+    }
+
+    .human-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ==============================
+   SPORTS PAGE
+   ============================== */
+
+.page-introduction {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.page-introduction h2 {
+    font-size: 2.8rem;
+    color: #172554;
+}
+
+.page-introduction p:last-child {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+.sport-section {
+    padding: 35px;
+    margin-bottom: 25px;
+
+    background-color: #172554;
+    color: #ffffff;
+
+    border-left: 5px solid #d4af37;
+}
+
+.sport-section h2 {
+    color: #d4af37;
+    font-size: 2rem;
+}
+
+.sport-section p {
+    line-height: 1.6;
+}
+
+.sport-section a {
+    color: #d4af37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sport-section a:hover {
+    color: #ffffff;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+@media (max-width: 600px) {
+
+    .sports-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==============================
+   ANALYSIS PAGE
+   ============================== */
+
+.analysts-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.analyst-profile {
+    background-color: #172554;
+    color: #ffffff;
+    border-top: 5px solid #d4af37;
+}
+
+.analyst-profile .analyst-content {
+    padding: 35px;
+}
+
+.analyst-profile h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.analyst-profile p {
+    line-height: 1.7;
+}
+
+
+/* Analysis articles */
+
+.analysis-articles {
+    margin-bottom: 70px;
+}
+
+.analysis-card {
+    padding: 30px;
+    margin-bottom: 25px;
+
+    border-left: 5px solid #d4af37;
+    background-color: #f5f5f5;
+}
+
+.analysis-card h3 {
+    font-size: 1.7rem;
+    color: #172554;
+}
+
+.analysis-card p {
+    line-height: 1.6;
+}
+
+.analysis-card a {
+    color: #172554;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.analysis-card a:hover {
+    color: #d4af37;
+}
+
+@media (max-width: 600px) {
+
+    .analysts-page {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==============================
+   FEATURES PAGE
+   ============================== */
+
+.feature-story {
+    margin: 50px 0;
+    padding: 60px 40px;
+
+    background-color: #172554;
+    color: #ffffff;
+
+    border-bottom: 5px solid #d4af37;
+}
+
+.feature-story-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.feature-story h2 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.feature-story p {
+    line-height: 1.7;
+}
+
+.feature-story .feature-subtitle {
+    color: #d4af37;
+}
+
+
+/* Feature cards */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+    margin-bottom: 70px;
+}
+
+.feature-card {
+    padding: 30px;
+
+    border: 1px solid #d4af37;
+    background-color: #ffffff;
+}
+
+.feature-card h3 {
+    color: #172554;
+    font-size: 1.6rem;
+}
+
+.feature-card p {
+    line-height: 1.6;
+}
+
+.feature-card a {
+    color: #172554;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.feature-card a:hover {
+    color: #d4af37;
+}
+
+@media (max-width: 600px) {
+
+    .feature-story {
+        padding: 45px 25px;
+    }
+
+    .feature-story h2 {
+        font-size: 2.2rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==============================
+   ENQUIRY PAGE
+   ============================== */
+
+.enquiry-section {
+    max-width: 750px;
+    margin: 50px auto 80px;
+    padding: 40px;
+
+    background-color: #f5f5f5;
+
+    border-top: 5px solid #d4af37;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+    color: #172554;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.enquiry-section button {
+    padding: 13px 25px;
+
+    border: none;
+
+    background-color: #172554;
+    color: #ffffff;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.enquiry-section button:hover {
+    background-color: #d4af37;
+    color: #172554;
+}
+
+/* ==============================
+   CONTACT PAGE
+   ============================== */
+
+.locations-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+    margin: 50px 0;
+}
+
+.location-card {
+    padding: 35px;
+
+    background-color: #172554;
+    color: #ffffff;
+
+    border-top: 5px solid #d4af37;
+}
+
+.location-card h2 {
+    color: #d4af37;
+    margin: 10px 0 20px;
+}
+
+.location-card p {
+    line-height: 1.7;
+}
+
+
+/* Map */
+
+.map-section {
+    margin: 70px 0;
+}
+
+.map-placeholder {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e5e7eb;
+
+    text-align: center;
+
+    border: 2px solid #172554;
+}
+
+.map-placeholder p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #172554;
+}
+
+
+/* Contact information */
+
+.contact-information {
+    margin: 70px auto;
+    padding: 40px;
+
+    max-width: 750px;
+
+    text-align: center;
+
+    background-color: #f5f5f5;
+
+    border-top: 5px solid #d4af37;
+}
+
+.contact-information h2 {
+    color: #172554;
+}
+
+.contact-information p {
+    line-height: 1.7;
+}
+
+.contact-information a {
+    color: #172554;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-information a:hover {
+    color: #d4af37;
+}
+
+@media (max-width: 600px) {
+
+    .locations-section {
+        grid-template-columns: 1fr;
+    }
+
+}
