@@ -1,15 +1,33 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Medalist</title>
+
+    <title>The Medalist | South African Sports News and Analysis</title>
+
+    <meta name="description" content="Discover South African sports news, football, rugby, cricket and basketball coverage, expert analysis, and stories exploring the people behind sporting greatness.">
+
+    <meta name="keywords" content="The Medalist, South African sports news, football, rugby, cricket, basketball, sports analysis, athlete stories">
+
+    <meta name="author" content="The Medalist">
+
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="css_assets/style.css">
+
+    <!-- GLightbox styling -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css"
+    >
 </head>
 
+
+
 <body>
-    <body>
+
     <!-- site header branding, easier css targeting-->
     <header class="site-header">
 
@@ -36,52 +54,57 @@
     <main>
 
     <!-- Featured story -->
-   <section class="hero">
+ <section class="hero">
 
-   <picture>
-    
-    <source
-    media="(max-width: 600px)"
-    srcset="_images/football/md-mahdi-small.jpg">
+<a
+    href="_images\football\md-mahdi-large.jpg"
+    class="glightbox"
+    data-gallery="homepage-gallery"
+    data-title="Beyond the Final Whistle"
+    data-description="The Human Cost of Sporting Greatness"
+>
+    <picture>
+        <source
+            media="(max-width: 600px)"
+            srcset="_images\football\md-mahdi-small.jpg"
+        >
 
-    <!-- Fallback image for larger screens -->
+        <img
+            src="_images\football\md-mahdi-large.jpg"
+            srcset="
+                _images\football\md-mahdi-small.jpg 480w, 
+                _images\football\md-mahdi-medium.jpg 800w,
+                _images\football\md-mahdi-large.jpg 1200w
+            "
+            sizes="(max-width: 600px) 100vw, 50vw"
+            alt="Football player on the pitch"
+        >
+    </picture>
+</a>
 
-    <img
-        src="_images/football/md-mahdi-small.jpg"
-        srcset="
-            _images/football/md-mahdi-small.jpg 480w,
-            _images/football/md-mahdi-medium.jpg 800w,
-            _images/football/md-mahdi-large.jpg 1200w
-        "
-        sizes="(max-width: 600px) 100vw, 50vw"
-        alt="Football player"
-    >
-</picture>
+<div class="hero-content">
+    <p class="category">FEATURE</p>
 
-    <div class="hero-content">
+    <h2>Beyond the Final Whistle</h2>
 
-        <p class="category">FEATURE</p>
+    <p class="feature-subtitle">
+        The Human Cost of Sporting Greatness
+    </p>
 
-        <h2>Beyond the Final Whistle</h2>
+    <p>
+        Behind every performance is an athlete dealing with
+        expectations, sacrifice and pressure. The Medalist
+        explores the people behind the results and the stories
+        that statistics cannot tell.
+    </p>
 
-        <p class="feature-subtitle">
-            The Human Cost of Sporting Greatness
-        </p>
-
-        <p>
-            Behind every performance is an athlete dealing with
-            expectations, sacrifice and pressure. The Medalist
-            explores the people behind the results and the stories
-            that statistics cannot tell.
-        </p>
-
-        <a href="features.html" class="read-more">
-            Read Feature
-        </a>
-
-    </div>
+    <a href="features.html" class="read-more">
+        Read Feature
+    </a>
+</div>
 
 </section>
+
 
     <!-- Latest news -->
    <section class="latest-news">
@@ -90,25 +113,32 @@
 
     <article class="news-card">
 
-         <picture>
+    <a
+    href="_images\football\waldemar-brandt- ingame fan view corner kick shot.jpg"
+    class="glightbox"
+    data-gallery="homepage-gallery"
+    data-title="Football"
+    data-description="In-game fan view of a corner kick in football"
+>   
+    <picture>
     
     <source
     media="(max-width: 600px)"
-    srcset="_images/football/waldemar-brandt-ingame fan view corner kick shot 480px.jpg">
+    srcset="_images\football\waldemar-brandt- ingame fan view corner kick shot 480px.jpg">
+>
 
-    
     <img
-        src="_images/football/waldemar-brandt- ingame fan view corner kick shot.jpg"
+        src="_images\football\waldemar-brandt- ingame fan view corner kick shot.jpg"
         srcset="
-            _images/football/waldemar-brandt-ingame fan view corner kick shot.jpg 480w,
-            _images/football/waldemar-brandt-ingame fan view corner kick shot.jpg 800w,
-            _images/football/waldemar-brandt-ingame fan view corner kick shot.jpg 1200w
+            _images\football\waldemar-brandt- ingame fan view corner kick shot 480px.jpg 480w,
+            _images\football\waldemar-brandt- ingame fan view corner kick shot 800px.jpg 800w,
+            _images\football\waldemar-brandt- ingame fan view corner kick shot 1200px.jpg 1200w
         "
         sizes="(max-width: 600px) 100vw, 50vw"
         alt="In-game fan view of a corner kick in football"
-    >
+        >
 </picture>
-
+    </a>
 
         <h3>A New Generation Rising in South African Football</h3>
 
@@ -121,25 +151,32 @@
 
     <article class="news-card">
 
-         <picture>
+         <a
+    href="_images\rugby\max-leveridge-ApRROE5h7Kw-unsplash.jpg"
+    class="glightbox"
+    data-gallery="homepage-gallery"
+    data-title="Rugby"
+    data-description="Rugby player tackling an opponent"
+    >
+     <picture>
     
     <source
     media="(max-width: 600px)"
     srcset="_images/rugby/max-leveridge-ApRROE5h7Kw-unsplash 480px.jpg">
 
-    
+     
     <img
-        src="_images/rugby/max-leveridge-ApRROE5h7Kw-unsplash.jpg"
+        src="_images\rugby\max-leveridge-ApRROE5h7Kw-unsplash 480px.jpg"
         srcset="
-            _images/rugby/max-leveridge-ApRROE5h7Kw-unsplash.jpg 480w,
-            _images/rugby/max-leveridge-ApRROE5h7Kw-unsplash.jpg 800w,
-            _images/rugby/max-leveridge-ApRROE5h7Kw-unsplash.jpg 1200w
+            _images\rugby\max-leveridge-ApRROE5h7Kw-unsplash 480px.jpg 480w,
+            _images\rugby\max-leveridge-ApRROE5h7Kw-unsplash 800px.jpg 800w,
+            _images\rugby\max-leveridge-ApRROE5h7Kw-unsplash 1200px.jpg 1200w
         "
         sizes="(max-width: 600px) 100vw, 50vw"
         alt="Rugby player tackling an opponent"
     >
-</picture>
-
+    </picture>
+         </a>
 
         <h3>The Next Chapter: South Africa's Young Rugby Talent</h3>
 
@@ -151,25 +188,32 @@
 
     <article class="news-card">
 
+    <a
+    href="_images\cricket\john-oswald-Xtv99pOV4T8-unsplash.jpg"
+    class="glightbox"
+    data-gallery="homepage-gallery"
+    data-title="Cricket"
+    data-description="Cricket players in action on the field"
+    >
          <picture>
     
     <source
     media="(max-width: 600px)"
-    srcset="_images/cricket/john-oswald-Xtv99pOV4T8-unsplash 480px.jpg">
+    srcset="_images\cricket\john-oswald-Xtv99pOV4T8-unsplash 480px.jpg">
 
-    
+
     <img
-        src="_images/cricket/john-oswald-Xtv99pOV4T8-unsplash.jpg"
+        src="_images\cricket\john-oswald-Xtv99pOV4T8-unsplash 480px.jpg"
         srcset="
-            _images/cricket/john-oswald-Xtv99pOV4T8-unsplash.jpg 480w,
-            _images/cricket/john-oswald-Xtv99pOV4T8-unsplash.jpg 800w,
-            _images/cricket/john-oswald-Xtv99pOV4T8-unsplash.jpg 1200w
+            _images\cricket\john-oswald-Xtv99pOV4T8-unsplash 480px.jpg 480w,
+            _images\cricket\john-oswald-Xtv99pOV4T8-unsplash 800px.jpg 800w,
+            _images\cricket\john-oswald-Xtv99pOV4T8-unsplash 1200px.jpg 1200w
         "
         sizes="(max-width: 600px) 100vw, 50vw"
-        alt="Cricket player preparing to bat"
+        alt="Cricket players in action on the field"
     >
 </picture>
-
+    </a>
 
         <h3>South Africa's Emerging Cricket Stars</h3>
 
@@ -182,24 +226,33 @@
 
     <article class="news-card">
 
+        <a
+    href="_images\basketball\vu-huy-hoang-chu-9OzQCwuaJhc-unsplash.jpg"
+    class="glightbox"
+    data-gallery="homepage-gallery"
+    data-title="Basketball"
+    data-description="Basketball player in action preparing to take a shot"
+    >
+
          <picture>
     
     <source
     media="(max-width: 600px)"
-    srcset="_images/basketball/vu-huy-hoang-chu-9OzQCwuaJhc-unsplash 480px.jpg">
+    srcset="_images\basketball\vu-huy-hoang-chu-9OzQCwuaJhc-unsplash 480px.jpg">
 
-    
+     
     <img
-        src="_images/basketball/vu-huy-hoang-chu-9OzQCwuaJhc-unsplash.jpg"
+        src="_images\basketball\vu-huy-hoang-chu-9OzQCwuaJhc-unsplash 480px.jpg"
         srcset="
-            _images/basketball/vu-huy-hoang-chu-9OzQCwuaJhc-unsplash.jpg 480w,
-            _images/basketball/vu-huy-hoang-chu-9OzQCwuaJhc-unsplash.jpg 800w,
-            _images/basketball/vu-huy-hoang-chu-9OzQCwuaJhc-unsplash.jpg 1200w
+            _images\basketball\vu-huy-hoang-chu-9OzQCwuaJhc-unsplash 480px.jpg 480w,
+            _images\basketball\vu-huy-hoang-chu-9OzQCwuaJhc-unsplash 800px.jpg 800w,
+            _images\basketball\vu-huy-hoang-chu-9OzQCwuaJhc-unsplash 1200px.jpg 1200w
         "
         sizes="(max-width: 600px) 100vw, 50vw"
-        alt="Basketball player preparing to take a shot"
+        alt="Basketball player in action preparing to take a shot"
     >
-</picture>
+    </picture>
+    </a>
 
 
         <h3>A New Era for South African Basketball</h3>
@@ -210,6 +263,21 @@
         </p>
 
     </article>
+
+</section>
+
+    <!-- Dynamic Latest Stories -->
+<section class="dynamic-stories">
+
+    <div class="section-heading">
+        <p class="category">LATEST UPDATES</p>
+        <h2>Latest Stories</h2>
+        <p>Discover the latest stories from the world of sport.</p>
+    </div>
+
+    <div id="dynamicStories" class="dynamic-stories-grid">
+        <!-- JavaScript will generate the story cards here -->
+    </div>
 
 </section>
 
@@ -368,7 +436,11 @@
         <p>&copy; 2026 The Medalist. All rights reserved.</p>
     </footer>
 
-</body>
+ <!-- GLightbox library -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+
+<!-- Your JavaScript file -->
+<script src="js_assets/main.js" defer></script>
 
 </body>
 

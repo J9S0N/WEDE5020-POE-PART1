@@ -73,7 +73,7 @@ The website contains:
 
 ## File Structure
 
-```text
+
 The-Medalist/
 │
 ├── index.html
@@ -96,7 +96,7 @@ The-Medalist/
     ├── rugby/
     ├── cricket/
     └── logo/
-```
+
 
 ## Part 1 Details
 
@@ -202,3 +202,47 @@ The project development process includes:
 * Tested responsive image selection using browser developer tools.
 * Tested navigation links across the website.
 * Confirmed that the updated About page loads and displays correctly.
+
+## Version 3.0 — Part 3
+
+### JavaScript and Interactive Functionality
+
+* Integrated GLightbox to provide an interactive image lightbox on the homepage.
+* Added search functionality to the Sports page, allowing visitors to search for sports content.
+* Implemented category filtering on the Sports page for easier content navigation.
+* Added interactive analysis tabs to filter articles by sport.
+* Implemented an FAQ accordion on the About page to make frequently asked questions easier to navigate.
+* Added dynamically generated latest-story cards to the homepage using JavaScript.
+* Embedded a Google Form on the Enquiry page to allow visitors to submit enquiries.
+
+### Search Engine Optimisation (SEO)
+
+* Added page-specific title tags to all seven website pages.
+* Added meta descriptions to improve how pages may appear in search results.
+* Added relevant meta keywords to the page metadata.
+* Included author and robots metadata.
+* Maintained viewport metadata to support responsive layouts across devices.
+
+### Website Improvements
+
+* Improved the consistency of the website's branding and page metadata.
+* Updated the Features page title and metadata to reflect its actual content.
+* Maintained the existing navigation structure across all seven pages.
+* Continued using the external CSS stylesheet and JavaScript file to organise website styling and functionality.
+
+### Testing and Verification
+
+* Tested the homepage image lightbox.
+* Tested the Sports page search and category filters.
+* Tested the Analysis page filtering tabs.
+* Tested the About page FAQ accordion.
+* Tested the dynamically generated homepage stories.
+* Tested the embedded Google Form on the Enquiry page.
+* Reviewed the page titles and metadata across all seven pages.
+* Confirmed that the implemented interactive features function as expected.
+
+### Documentation
+
+* Updated the project documentation to include Part 3 development.
+* Documented the JavaScript functionality and SEO improvements.
+* Maintained the project history for Parts 1, 2 and 3.

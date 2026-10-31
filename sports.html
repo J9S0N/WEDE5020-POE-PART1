@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sports | The Medalist</title>
+    <title>Sports News | Football, Rugby, Cricket & Basketball | The Medalist</title>
+
+    <meta name="description" content="Explore South African and international football, rugby, cricket and basketball coverage, emerging talent, sporting developments and player stories from The Medalist.">
+
+    <meta name="keywords" content="sports news, South African football, rugby news, cricket news, basketball, emerging athletes, The Medalist">
+
+    <meta name="author" content="The Medalist">
+
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="css_assets/style.css">
-
 </head>
+
+
 
 
 <body>
@@ -60,10 +68,37 @@
 
         </section>
 
+                <!-- Search and filter sports -->
+        <section class="sports-search">
+
+            <h2>Find Your Sport</h2>
+
+            <label for="sportSearch">Search sports:</label>
+
+            <input
+                type="search"
+                id="sportSearch"
+                placeholder="e.g. football, players, international"
+            >
+
+            <label for="sportFilter">Filter by category:</label>
+
+            <select id="sportFilter">
+                <option value="all">All Sports</option>
+                <option value="football">Football</option>
+                <option value="rugby">Rugby</option>
+                <option value="cricket">Cricket</option>
+                <option value="basketball">Basketball</option>
+            </select>
+
+            <p id="searchMessage" aria-live="polite"></p>
+
+        </section>
+
         <div class="sports-grid">
 
         <!-- Football -->
-        <section class="sport-section">
+        <section class="sport-section" data-sport="football">
 
             <h2>Football</h2>
 
@@ -81,7 +116,7 @@
 
 
         <!-- Rugby -->
-        <section class="sport-section">
+        <section class="sport-section" data-sport="rugby">
 
             <h2>Rugby</h2>
 
@@ -99,7 +134,7 @@
 
 
         <!-- Cricket -->
-        <section class="sport-section">
+        <section class="sport-section" data-sport="cricket">
 
             <h2>Cricket</h2>
 
@@ -116,7 +151,7 @@
 
 
         <!-- Basketball -->
-        <section class="sport-section">
+        <section class="sport-section" data-sport="basketball">
 
             <h2>Basketball</h2>
 
@@ -144,6 +179,12 @@
 
     </footer>
 
+        </footer>
+
+    <script src="js_assets/main.js"></script>
+
+</body>
+</html>
 </body>
 
 </html>
